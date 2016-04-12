@@ -1,0 +1,16 @@
+<div class='shilpa-container' ng-controller="admin-controller">
+	<h1>courses will disply here</h1>
+	<div >
+		<ul>
+			<li ng-repeat="c in model"> 
+			<div>
+			 <p><label ng-bind="c.fname"></label>
+			 <label ng-bind="c.lastname"></label></p>
+			 <p><label ng-bind="c.email"></label>
+			  <label ng-bind="c.comment"></label>	</p>
+			  </div>		   
+			</li>
+		</ul>
+	</div>
+</div>
+

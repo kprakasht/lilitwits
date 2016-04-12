@@ -1,0 +1,28 @@
+<div style="height: 600px" data-ng-controller='blog-edit-controller'>
+	<p>
+		<label>Heading : 
+			<input type="text" style="width:300px;" data-ng-model="model.heading"/>
+		</label>
+	</p>
+	<p>
+		<div text-angular="text-angular" name="htmlcontent" ng-model="model.blogContent" ta-disabled='disabled'></div>
+		<br/>
+		<textarea ng-model="model.blogContent" style="width: 80%"></textarea>
+		<br/>
+	</p>
+	<p>
+		<button ng-click="submitClicked()">Submit</button>
+	    <button ng-click="clearClicked()">Clear</button>
+	</p>
+	<p>
+	    <div ng-hide="!displayerror">
+	     	<label ng-hide="!isSuccess" style="color: green"> Saved successfully</label>
+	        <label ng-hide="isSuccess" style="color: red">Unable to Save</label>
+	    </div>
+	</p>
+</div>
+
+s
+
+
+
